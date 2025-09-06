@@ -1,48 +1,8 @@
-A Comprehensive Overview of the Ruby Voice Assistant
-This voice-activated system, formally designated as "Ruby," constitutes a foundational software application developed utilizing the Python programming language. The system is engineered to execute a range of rudimentary functions in response to vocal commands, including the provision of multimedia content from external platforms, the reporting of current temporal status, the resolution of informational queries via a public knowledge repository, and the delivery of comedic narratives.
-
-Operational Capabilities
-Vocal Command Integration: The system is configured to respond to articulated commands subsequent to the audibility of the designated wake word, "Ruby."
-
-Auditory Content Provision: The system is capable of initiating the playback of specified auditory and visual content on the YouTube platform.
-
-Example of Protocol Initiation: "Ruby, play Bohemian Rhapsody."
-
-Temporal Status Reporting: The system possesses the functionality to report the current temporal status with precision.
-
-Example of Protocol Initiation: "Ruby, what is the current time?"
-
-Informational Query Resolution: The system is equipped to furnish a concise summary concerning a specified individual or subject by interfacing with the Wikipedia repository.
-
-Example of Protocol Initiation: "Ruby, who is Albert Einstein?"
-
-Provision of Comedic Narratives: The system is capable of delivering a randomly selected comedic narrative upon request.
-
-Example of Protocol Initiation: "Ruby, provide a comedic narrative."
-
-System Termination Protocol: The system can be shut down via a direct vocal command.
-
-Example of Protocol Initiation: "Ruby, terminate."
-
-Antecedent Requirements
-Prior to the commencement of system operations, the installation of requisite Python libraries is mandatory. It is assumed that the Python package management system, pip, has been installed on the host machine.
-
-The following dependencies are to be installed via a command-line interface:
-
-pip install SpeechRecognition
+A Comprehensive Overview of the Ruby Voice AssistantThis voice-activated system, formally designated as "Ruby," constitutes a foundational software application developed utilizing the Python programming language. The system is engineered to execute a range of rudimentary functions in response to vocal commands, including the provision of multimedia content from external platforms, the reporting of current temporal status, the resolution of informational queries via a public knowledge repository, and the delivery of comedic narratives.Operational CapabilitiesVocal Command Integration: The system is configured to respond to articulated commands subsequent to the audibility of the designated wake word, "Ruby."Auditory Content Provision: The system is capable of initiating the playback of specified auditory and visual content on the YouTube platform.Example of Protocol Initiation: "Ruby, play Bohemian Rhapsody."Temporal Status Reporting: The system possesses the functionality to report the current temporal status with precision.Example of Protocol Initiation: "Ruby, what is the current time?"Informational Query Resolution: The system is equipped to furnish a concise summary concerning a specified individual or subject by interfacing with the Wikipedia repository.Example of Protocol Initiation: "Ruby, who is Albert Einstein?"Provision of Comedic Narratives: The system is capable of delivering a randomly selected comedic narrative upon request.Example of Protocol Initiation: "Ruby, provide a comedic narrative."System Termination Protocol: The system can be shut down via a direct vocal command.Example of Protocol Initiation: "Ruby, terminate."Antecedent RequirementsPrior to the commencement of system operations, the installation of requisite Python libraries is mandatory. It is assumed that the Python package management system, pip, has been installed on the host machine.The following dependencies are to be installed via a command-line interface:pip install SpeechRecognition
 pip install PyAudio
 pip install pyttsx3
 pip install pywhatkit
 pip install wikipedia
 pip install pyjokes
-
-Advisory regarding PyAudio: It has been observed that the installation of PyAudio may present challenges on certain operating systems. In such instances, consultation with official documentation or the seeking of specific installation instructions for the host environment is advised.
-
-Operational Procedures
-File Archiving: The provided source code is to be archived in a file designated as ruby.py.
-
-System Execution: From a command-line interface, navigate to the directory containing the aforementioned file and initiate the script's execution.
-
-python ruby.py
-
+Advisory regarding PyAudio: It has been observed that the installation of PyAudio may present challenges on certain operating systems. In such instances, consultation with official documentation or the seeking of specific installation instructions for the host environment is advised.Operational ProceduresFile Archiving: The provided source code is to be archived in a file designated as ruby.py.System Execution: From a command-line interface, navigate to the directory containing the aforementioned file and initiate the script's execution.python ruby.py
 Vocal Input Initiation: The system will display the prompt "Start Speaking!!" within the terminal. Upon the appearance of this message, vocal articulation may be initiated, with each command prefaced by the designated wake word "Ruby."
