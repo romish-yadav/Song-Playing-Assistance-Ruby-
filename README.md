@@ -1,50 +1,83 @@
-Ruby: The Voice Assistant 🤖
-Ruby is a simple voice-activated assistant written in Python. It can perform basic tasks such as playing YouTube videos, telling the current time, providing information from Wikipedia, and sharing a joke, all through voice commands.
+# 🎙️ Ruby - Python Voice Assistant
 
-Features ✨
-Voice Control: Responds to voice commands after hearing the wake word "Ruby".
+## 📋 Description
 
-Play Music: Plays a specific song or video on YouTube.
+**Ruby** is a simple voice-activated assistant built using Python. It can perform tasks such as playing songs on YouTube, telling the current time, fetching short summaries from Wikipedia, telling jokes, and responding to basic voice commands. Ruby uses speech recognition and text-to-speech libraries to interact with the user in real-time.
 
-Example: "Ruby, play Bohemian Rhapsody"
+---
 
-Get Time: Tells the current time.
+## 🧠 Features
 
-Example: "Ruby, what's the time?"
+* 🎵 **Play Songs**: Say “Ruby play \[song name]” to play music on YouTube.
+* 🕒 **Tell Time**: Ask “Ruby what’s the time?” to hear the current time.
+* 🧠 **Wikipedia Info**: Say “Ruby who is \[person or topic]” to get a quick Wikipedia summary.
+* 😂 **Tell Jokes**: Ask “Ruby tell me a joke” for a random joke.
+* ❌ **Exit Command**: Say “Ruby stop” to terminate the assistant.
 
-Search Wikipedia: Provides a summary of a person or topic.
+---
 
-Example: "Ruby, who is Albert Einstein?"
+## 🚀 How to Run
 
-Tell a Joke: Shares a random joke.
+### 1. Install Required Libraries
 
-Example: "Ruby, tell me a joke."
+Ensure you have Python 3 installed. Then install the following dependencies:
 
-Stop Command: Shuts down the assistant.
+```bash
+pip install SpeechRecognition pyttsx3 pywhatkit pyjokes wikipedia pyaudio
+```
 
-Example: "Ruby, stop."
+> 🔧 **Note**: You may need to install PyAudio separately based on your OS.
+> For Windows: `pip install pipwin` then `pipwin install pyaudio`
 
-Prerequisites 🔧
-Before you run the code, you'll need to install the necessary Python libraries. Make sure you have pip installed.
+### 2. Save the Script
 
-Open your terminal or command prompt and run the following commands:
+Save the code as `ruby_voice_assistant.py`.
 
-Bash
+### 3. Run the Script
 
-pip install SpeechRecognition
-pip install PyAudio
-pip install pyttsx3
-pip install pywhatkit
-pip install wikipedia
-pip install pyjokes
-PyAudio Note: Some users might encounter issues installing PyAudio. If you do, you may need to install it with a pre-built wheel from Christoph Gohlke's website or use a different method specific to your operating system.
+```bash
+python ruby_voice_assistant.py
+```
 
-How to Run the Code ▶️
-Save the code: Save the provided Python code in a file named ruby.py.
+Now, speak your commands after saying **“Ruby”** (e.g., "Ruby play Despacito").
 
-Run from the terminal: Open your terminal or command prompt, navigate to the directory where you saved the file, and run the script:
+---
 
-Bash
+## 🧑‍💻 How It Works
 
-python ruby.py
-Start Speaking: The program will print "Start Speaking!!" in the terminal. Wait for this message, and then say your command starting with the wake word "Ruby". For example, "Ruby, tell me a joke."
+* Uses **SpeechRecognition** to capture and convert speech to text.
+* Uses **pyttsx3** for text-to-speech output.
+* Uses **pywhatkit** to play YouTube videos.
+* Uses **wikipedia** to fetch brief summaries.
+* Uses **pyjokes** to tell jokes.
+* Continuously listens for commands in a `while True` loop.
+
+---
+
+## ❗ Commands You Can Use
+
+* "Ruby play \[song name]"
+* "Ruby what time is it"
+* "Ruby who is \[person or topic]"
+* "Ruby tell me a joke"
+* "Ruby stop"
+
+---
+
+## 🛑 Known Issues
+
+* Silent failure if no speech is recognized.
+* No internet check for YouTube or Wikipedia requests.
+* Background noise may affect recognition.
+
+---
+
+## 📄 License
+
+This project is open-source and free to use for learning and development purposes.
+
+---
+
+## 🙋‍♂️ Author
+
+Developed as a basic voice assistant project in Python. Contributions and improvements are welcome!
